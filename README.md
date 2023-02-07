@@ -19,3 +19,9 @@ python run_abag.py --prompt "a girl is eating pizza on desk" --seeds [0] --token
 |bbox2.txt means|generated image|
 |--|--|
 |![](https://github.com/birdManIkioiShota/ABaG/blob/main/images/bbox2.png)|![](https://github.com/birdManIkioiShota/ABaG/blob/main/images/a_girl_is_eating_pizza%20on_desk.png)|
+
+# Known Issue
+- lossが落ちてくれないときがある
+> lrをいじると落ちるときがあります。
+- lossが落ちてるのに構図がbbox通りにならないことがある
+> 原因不明。Attention mapを見る限りBBox内の値が高く出てるんですが…
